@@ -86,7 +86,7 @@ function App() {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/shubham090/"
+                  href="https://www.linkedin.com/in/sarthak661"
                   className="navbar-link"
                   data-nav-link
                 >
