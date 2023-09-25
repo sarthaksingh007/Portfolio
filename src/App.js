@@ -14,6 +14,7 @@ import { PhonePortraitOutline } from 'react-ionicons'
 import { LocationSharp } from 'react-ionicons'
 import AA from "../src/assets/images/aa.jpg"
 import AbsImg from "../src/assets/images/absolute-image.jpg"
+import ScrollToTop from "react-scroll-to-top";
 import { GitCompareOutline } from 'react-ionicons'
 import { GitBranchOutline } from 'react-ionicons'
 import { ArrowForwardSharp } from 'react-ionicons'
@@ -100,6 +101,7 @@ function App() {
 
       {/* Main Content */}
       <main>
+      <ScrollToTop smooth color="#6f00ff" />
         <article>
           {/* Hero Section */}
           <section className="hero" id="home" style={{ backgroundImage: `url(${heroBgImage})` }}>
