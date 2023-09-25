@@ -33,11 +33,11 @@ function App() {
 
 
   return (
-    <div>
+    <div >
       {/* Header */}
       <header className={`header ${isOpen ? 'nav-active' : 'header'}`} data-header>
         <div className="container">
-          <a to="#">
+          <a href="#">
             <h1 className="logo">Sarthak</h1>
           </a>
           <button
@@ -55,32 +55,32 @@ function App() {
           <nav className={`navbar container ${isOpen ? 'nav-active' : 'navbar container'}`}>
             <ul className="navbar-list">
               <li>
-                <a to="#home" className="navbar-link" data-nav-link>
+                <a href="#home" className="navbar-link" data-nav-link>
                   Home
                 </a>
               </li>
               <li>
-                <a to="#about" className="navbar-link" data-nav-link>
+                <a href="#about" className="navbar-link" data-nav-link>
                   About
                 </a>
               </li>
               <li>
-                <a to="#portfolio" className="navbar-link" data-nav-link>
+                <a href="#portfolio" className="navbar-link" data-nav-link>
                   Projects
                 </a>
               </li>
               <li>
-                <a to="#skills" className="navbar-link" data-nav-link>
+                <a href="#skills" className="navbar-link" data-nav-link>
                   Skills
                 </a>
               </li>
               <li>
-                <a to="#contact" className="navbar-link" data-nav-link>
+                <a href="#contact" className="navbar-link" data-nav-link>
                   Contact
                 </a>
               </li>
               <li>
-                <a to="#blog" className="navbar-link" data-nav-link>
+                <a href="#blog" className="navbar-link" data-nav-link>
                   Societies
                 </a>
               </li>
@@ -121,8 +121,8 @@ function App() {
                   A creative developer specializing in Frontend and Backend Web-Dev.
                 </p>
                 <div className="btn-group">
-                  <a to="http://bit.ly/3EHSBz5" className="btn btn-primary blue">Download Resume</a>
-                  <a to="#about" className="btn">About Me</a>
+                  <a href="http://bit.ly/3EHSBz5" className="btn btn-primary blue">Download Resume</a>
+                  <a href="#about" className="btn">About Me</a>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@ function App() {
                   innovative solutions in the realm of MERN and Next.js stack web development, ultimately delivering valuable
                   digital experiences that benefit users.
                 </p>
-                <a to="#portfolio" className="btn btn-primary blue">View Projects</a>
+                <a href="#portfolio" className="btn btn-primary blue">View Projects</a>
               </div>
             </div>
           </section>
@@ -201,7 +201,7 @@ function App() {
                 <li>
                   <div className="blog-card">
                     <figure className="card-banner">
-                      <a to="https://www.iaeng.org/">
+                      <a href="https://www.iaeng.org/">
                         <img
                           src={Iaeng}
                           width="1181"
@@ -222,7 +222,7 @@ function App() {
                 <li>
                   <div className="blog-card">
                     <figure className="card-banner">
-                      <a to="https://www.internetsociety.org/">
+                      <a href="https://www.internetsociety.org/">
                         <img
                           src={Blog1}
                           width="1181"
@@ -273,7 +273,7 @@ function App() {
                       </p>
                       <br />
                       <span className="btn-link">
-                        <a to="https://sarthaksingh007.github.io/hostelwebsite/">
+                        <a href="https://sarthaksingh007.github.io/hostelwebsite/">
                           <span>Hosted Here</span>
                         </a>
                         <ArrowForwardSharp
@@ -285,7 +285,7 @@ function App() {
                       </span>
                       <br />
                       <span className="btn-link">
-                        <a to="https://github.com/sarthaksingh007/hostelwebsite">
+                        <a href="https://github.com/sarthaksingh007/hostelwebsite">
                           <span>Github</span>
                         </a>
                         <ArrowForwardSharp
@@ -314,7 +314,7 @@ function App() {
                       </p>
                       <br />
                       <span className="btn-link">
-                        <a to="https://github.com/sarthaksingh007/letsTalkaboutit">
+                        <a href="https://github.com/sarthaksingh007/letsTalkaboutit">
                           <span>Github</span>
                         </a>
                         <ArrowForwardSharp
@@ -326,7 +326,7 @@ function App() {
                       </span>
                       <br />
                       <span className="btn-link">
-                        <a to="https://lets-talk-about-it-31u8.onrender.com/">
+                        <a href="https://lets-talk-about-it-31u8.onrender.com/">
                           <span>Hosted Here</span>
                         </a>
                         <ArrowForwardSharp
@@ -351,7 +351,7 @@ function App() {
                       <p class="card-subtitle">Frameworks: ReactJs, ChartJs<br />
                         Hosted at <b>Github.com</b> <br /></p>
                       <span class="btn-link">
-                        <a to="https://github.com/sarthaksingh007/project"><span>Github</span></a>
+                        <a href="https://github.com/sarthaksingh007/project"><span>Github</span></a>
 
                         <ArrowForwardSharp
                           color={'#df2a2a'}
@@ -361,7 +361,7 @@ function App() {
                         />
                       </span><br />
                       <span class="btn-link">
-                        <a to="https://sarthaksingh007.github.io/project/"><span>Hosted Here</span></a>
+                        <a href="https://sarthaksingh007.github.io/project/"><span>Hosted Here</span></a>
 
                         <ArrowForwardSharp
                           color={'#df2a2a'}
@@ -384,7 +384,7 @@ function App() {
                       <p class="card-subtitle"><b>Ongoing</b> <br />
                         Aims: Web-socket for user connection <br /> NodeJs for server, ReactJs for Frontend</p>
                       <span class="btn-link">
-                        <a to="coming-soon.html"><span>Github</span></a>
+                        <a href="coming-soon.html"><span>Github</span></a>
 
 
                         <ArrowForwardSharp
@@ -458,8 +458,8 @@ function App() {
                 <li class="skills-item">
                   <div class="skills-card" style={{ width: '95%' }}>
                     <p class="skills-title"><strong>Coding Profiles</strong></p>
-                    <p class="skills-text"> <a to="https://leetcode.com/sarthak_2022/">LeetCode</a></p>
-                    <p class="skills-text"> <a to="https://auth.geeksforgeeks.org/user/sarthak_iiitu/">GeeksforGeeks</a>
+                    <p class="skills-text"> <a href="https://leetcode.com/sarthak_2022/">LeetCode</a></p>
+                    <p class="skills-text"> <a href="https://auth.geeksforgeeks.org/user/sarthak_iiitu/">GeeksforGeeks</a>
                     </p>
                   </div>
                 </li>
@@ -507,7 +507,7 @@ function App() {
                       </div>
                       <div>
                         <h3 className="contact-item-title">Email</h3>
-                        <a to="mailto:sarthaksingh661@gmail.com" className="contact-item-link">sarthaksingh661@gmail.com</a>
+                        <a href="mailto:sarthaksingh661@gmail.com" className="contact-item-link">sarthaksingh661@gmail.com</a>
                       </div>
                     </li>
                     <li className="contact-item">
@@ -521,7 +521,7 @@ function App() {
                       </div>
                       <div>
                         <h3 className="contact-item-title">Phone</h3>
-                        <a to="tel:+917248132013" className="contact-item-link">+91 7248132013</a>
+                        <a href="tel:+917248132013" className="contact-item-link">+91 7248132013</a>
                       </div>
                     </li>
                   </ul>
@@ -537,16 +537,16 @@ function App() {
         <div class="container">
 
           <p class="copyright">
-            &copy; 2023 <a to="/" class="copyright-link">Sarthak</a>. All Rights Reseverd
+            &copy; 2023 <a href="/" class="copyright-link">Sarthak</a>. All Rights Reseverd
           </p>
 
           <ul class="footer-list">
             <li>
-              <a to="/" class="footer-link">Terms & Condition</a>
+              <a href="/" class="footer-link">Terms & Condition</a>
             </li>
 
             <li>
-              <a to="/" class="footer-link">Privacy Policy</a>
+              <a href="/" class="footer-link">Privacy Policy</a>
             </li>
           </ul>
 
