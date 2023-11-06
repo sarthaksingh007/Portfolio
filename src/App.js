@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import emailjs from "@emailjs/browser";
 import './App.css'; // Import your CSS file here
 import heroBgImage from '../src/assets/images/hero-bg.jpg';
 import Iaeng from "../src/assets/images/iaeng.jpg"
@@ -26,11 +27,42 @@ import { AnalyticsSharp } from 'react-ionicons'
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+
+    //email js service id, template id, public key
+    const serviceId = 'service_whecm6a';
+    const templateId = 'template_zhai9tk';
+    const publicKey = 'xw99c06UwUfBK26Uz';
+
+    //create object for naming 
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Sarthak Singh',
+      message: message,
+    };
+
+    //send the email using EmailJs
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.log("Error sending email:", error);
+      })
+  }
 
 
   return (
@@ -101,7 +133,7 @@ function App() {
 
       {/* Main Content */}
       <main>
-      <ScrollToTop smooth color="#6f00ff" />
+        <ScrollToTop smooth color="#6f00ff" />
         <article>
           {/* Hero Section */}
           <section className="hero" id="home" style={{ backgroundImage: `url(${heroBgImage})` }}>
@@ -476,10 +508,10 @@ function App() {
               <div className="contact-card">
                 {/* Contact Form */}
                 <div className="wrapper">
-                  <form action="/" className="contact-form">
-                    <input type="text" name="name" placeholder="Name" required className="contact-input" />
-                    <input type="email" name="email" placeholder="Email" required className="contact-input" />
-                    <textarea name="message" placeholder="Message" required className="contact-input"></textarea>
+                  <form onSubmit={HandleSubmit} className="contact-form">
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name" required className="contact-input" />
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required className="contact-input" />
+                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message" required className="contact-input"></textarea>
                     <button type="submit" className="btn-submit">Submit Message</button>
                   </form>
                   {/* Contact List */}

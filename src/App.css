@@ -253,7 +253,7 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: var(--space-cadet);
+  background-color: var(--space-cadet) !important;
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -987,7 +987,7 @@ textarea.contact-input {
 
   .header,
   .header.nav-active {
-    background-color: transparent;
+    background-color: var(--space-cadet);
     box-shadow: none;
     height: unset;
     padding-block: 30px;
